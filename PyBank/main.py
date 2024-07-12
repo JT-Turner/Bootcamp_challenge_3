@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Reading the budget data
-file_path = r"C:\Users\jt4ha\Dark Sky Data Dropbox\JT Turner\PyBank\budget_data.csv"
+file_path = r"Resources/budget_data.csv"
 df = pd.read_csv(file_path)
 total_months = df.shape[0]
 total_value = df.iloc[:, 1].sum()
@@ -36,5 +36,5 @@ results = pd.DataFrame({
     'biggest profit' : bp,
     'biggest loss' : bl,  
 })
-  results.to_csv(r"C:\Users\jt4ha\Dark Sky Data Dropbox\JT Turner\Starter_Code\PyPoll\Resources\pyroll_results.csv", index=False)
+  results.to_csv(r"Analysis/Pybank_results.csv", index=False)
 
