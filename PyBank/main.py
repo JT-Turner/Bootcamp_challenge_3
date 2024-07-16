@@ -35,7 +35,7 @@ results = [
     ["Biggest loss", bl, minprof]
 ]
 
-with open(r"Analysis/Pybank_results.csv", mode='w', newline='') as file:
+with open(r"PyBank/Results/Results.txt", mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Metric", "Value"])
     for result in results:
