@@ -1,7 +1,7 @@
 import csv
 
 # Reading the election data
-file_path = r"Resources/election_data.csv"
+file_path = r"PyRoll/Resources/election_data.csv"
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
     header = next(reader)  # Skip the header row
