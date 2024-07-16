@@ -1,7 +1,7 @@
 import csv
 
 # Reading the budget data
-file_path = r"Resources/budget_data.csv"
+file_path = r"PyBank/Resources/budget_data.csv"
 with open(file_path, mode='r') as file:
     reader = csv.reader(file)
     header = next(reader)  # Skip the header row
