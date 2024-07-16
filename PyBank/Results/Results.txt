@@ -1,0 +1,6 @@
+Metric,Value
+Total months,86
+Total Value,22564198
+Average change,8311.11
+Biggest profit,['Aug-16'],1862002
+Biggest loss,['Feb-14'],-1825558
