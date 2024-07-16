@@ -32,8 +32,12 @@ print(f'Winner: {winner}')
 results_path = r"Analysis/pyroll_results.csv"
 with open(results_path, mode='w', newline='') as file:
     writer = csv.writer(file)
+    writer.writerow(["Metric", "Value"])
+    writer.writerow(["Total Votes", total_votes])
+    writer.writerow(["", ""])  # Empty row for separation
     writer.writerow(["Candidate", "Votes", "Percentage"])
     for candidate, votes in candidate_counts.items():
         percentage = votes_percentage[candidate]
         writer.writerow([candidate, votes, f"{percentage:.2f}"])
+    writer.writerow(["", "", ""])  # Empty row for separation
     writer.writerow(["Winner", winner, ""])
