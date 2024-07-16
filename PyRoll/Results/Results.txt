@@ -1,0 +1,9 @@
+Metric,Value
+Total Votes,369711
+
+Candidate,Votes,Percentage
+Charles Casper Stockham,85213, 23.049
+Diana DeGette,272892,73.812
+Raymon Anthony Doane,11606,3.183
+
+Winner,Diana DeGette,
