@@ -36,3 +36,4 @@ with open(results_path, mode='w', newline='') as file:
     for candidate, votes in candidate_counts.items():
         percentage = votes_percentage[candidate]
         writer.writerow([candidate, votes, f"{percentage:.2f}"])
+    writer.writerow(["Winner", winner, ""])
