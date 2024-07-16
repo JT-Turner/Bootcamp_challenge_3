@@ -29,7 +29,7 @@ for candidate, votes in candidate_counts.items():
 print(f'Winner: {winner}')
 
 # Writing results to a CSV file
-results_path = r"Analysis/pyroll_results.csv"
+results_path = r"PyRoll/Results/Results.txt"
 with open(results_path, mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Metric", "Value"])
